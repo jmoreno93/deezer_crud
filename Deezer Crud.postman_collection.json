@@ -1,0 +1,2325 @@
+{
+	"info": {
+		"_postman_id": "756dfe76-23ca-437f-aadd-513df2da78d7",
+		"name": "Deezer Crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7359193"
+	},
+	"item": [
+		{
+			"name": "Artist",
+			"item": [
+				{
+					"name": "LIST",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/artist",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"artist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/artist/1/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"artist",
+								"1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Ejemplo",
+									"type": "text"
+								},
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/home/moises/Downloads/visit_us_image.png"
+								},
+								{
+									"key": "nb_album",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "nb_fan",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/artist/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"artist",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Ejemplo editado",
+									"type": "text"
+								},
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/home/moises/Downloads/visit_us_image.png"
+								},
+								{
+									"key": "nb_album",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "nb_fan",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/artist/1/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"artist",
+								"1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/artist/2/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"artist",
+								"2",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Album",
+			"item": [
+				{
+					"name": "LIST",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/album",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"album"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/album/1/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"album",
+								"1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Album 1",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/home/moises/Downloads/visit_us_image.png"
+								},
+								{
+									"key": "release_date",
+									"value": "2023-10-31",
+									"type": "text"
+								},
+								{
+									"key": "available",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "artist",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/album/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"album",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Album 1 editado",
+									"type": "text"
+								},
+								{
+									"key": "release_date",
+									"value": "2023-10-31",
+									"type": "text"
+								},
+								{
+									"key": "available",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "artist",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/home/moises/Downloads/visit_us_image.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/album/1/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"album",
+								"1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/album/2/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"album",
+								"2",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Track",
+			"item": [
+				{
+					"name": "LIST",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/track",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"track"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/track/1/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"track",
+								"1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Musica 1",
+									"type": "text"
+								},
+								{
+									"key": "title_short",
+									"value": "m1",
+									"type": "text"
+								},
+								{
+									"key": "duration",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "rank",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "release_date",
+									"value": "2023-10-12",
+									"type": "text"
+								},
+								{
+									"key": "bpm",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "gain",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "artist",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "album",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/home/moises/Downloads/visit_us_image.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/track/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"track",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Musica 1",
+									"type": "text"
+								},
+								{
+									"key": "title_short",
+									"value": "m1",
+									"type": "text"
+								},
+								{
+									"key": "duration",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "rank",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "release_date",
+									"value": "2023-10-12",
+									"type": "text"
+								},
+								{
+									"key": "bpm",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "gain",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "artist",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "album",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/home/moises/Downloads/visit_us_image.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/track/2/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"track",
+								"2",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token {{deezer_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/track/2/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"track",
+								"2",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamado WebHook referencia invalida",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ResultCode",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "Status",
+											"value": "ALLOW",
+											"type": "text"
+										},
+										{
+											"key": "Datetime",
+											"value": "23-06-2021 23:34:23",
+											"type": "text"
+										},
+										{
+											"key": "AccountID",
+											"value": "2345",
+											"type": "text"
+										},
+										{
+											"key": "ReferenceNumber",
+											"value": "aafgasfgasgf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8043",
+									"path": [
+										"partnerTransaction",
+										"security",
+										"whtokenService"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8043"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Routes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test\",\n    \"artist\": {\n        \"name\": \"Artist example\"\n    },\n    \"album\": {\n        \"title\": \"Album title example\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
+				}
+			},
+			"response": [
+				{
+					"name": "Llamado WebHook referencia invalida",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "W72Zzx6kwgfG2tX1hCQws0Bzo7hWufVO",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ResultCode",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "Status",
+									"value": "ALLOW",
+									"type": "text"
+								},
+								{
+									"key": "Datetime",
+									"value": "23-06-2021 23:34:23",
+									"type": "text"
+								},
+								{
+									"key": "AccountID",
+									"value": "2345",
+									"type": "text"
+								},
+								{
+									"key": "ReferenceNumber",
+									"value": "aafgasfgasgf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8043/partnerTransaction/security/whtokenService",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8043",
+							"path": [
+								"partnerTransaction",
+								"security",
+								"whtokenService"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8043"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Jun 2021 20:12:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.6"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Invalid reference\",\n    \"code\": 422\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let resp = pm.response.json();",
+							"let TOKEN=resp.token;",
+							"pm.environment.set(\"deezer_token\",TOKEN);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"admin\",\n    \"password\": \"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/auth/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let resp = pm.response.json();",
+							"let TOKEN=resp.token;",
+							"pm.environment.set(\"deezer_token\",TOKEN);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"moisesmore007@gmail.com\",\n    \"password\": \"123456\",\n    \"first_name\": \"Moises\",\n    \"last_name\": \"Moreno\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/auth/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let resp = pm.response.json();",
+							"let TOKEN=resp.token;",
+							"pm.environment.set(\"deezer_token\",TOKEN);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token {{deezer_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/auth/logout/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"logout",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

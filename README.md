@@ -74,9 +74,4 @@ python manage.py runserver
 
 ## In Postman
 
-All endpoints are protected, so you need to add a token in the header of each request.
-Example:
-
-```bash
-Authorization: token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b
-```
+Todos los endpoint estan protegidos, en postman se estan manejando variables de entorno, por lo tanto sería bueno que al momento de importar el postman se asigne un entorno de variables vacia para que al logear el token se vaya actualice en los endpoint
