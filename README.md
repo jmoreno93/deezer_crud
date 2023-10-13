@@ -60,8 +60,6 @@ python manage.py runserver
 
 ## Endpoints
 
-- http://localhost:8000/admin/
-- http://localhost:8000/ -> Documentation
 - http://localhost:8000/artist/ -> List of artists GET | POST | PUT | DELETE
 - http://localhost:8000/album/ -> List of albums GET | POST | PUT | DELETE
 - http://localhost:8000/track/ -> List of tracks GET | POST | PUT | DELETE
