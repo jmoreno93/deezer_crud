@@ -15,16 +15,24 @@ Este proyecto pretende ser un clon de la api de Deezer, con el fin de rendir la 
 virtualenv venv
 ```
 
-## Activate virtualenv
+## Activate virtualenv Windows
 
 ```bash
 source venv/Scripts/activate
 ```
 
+## Activate virtualenv Linux
+
+```bash
+source venv/bin/activate
+```
+
 ## Install requirements
 
 ```bash
-pip install -r requirements.txt
+pip install django
+pip install djangorestframework
+pip install Pillow
 ```
 
 ## Database
